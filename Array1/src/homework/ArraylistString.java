@@ -15,7 +15,7 @@ public class ArraylistString {
 			prefer();
 
 		}
-
+//do with do while loop
 		static Scanner sc = new Scanner(System.in);
 		static ArrayList<String> names = new ArrayList<>();
 		

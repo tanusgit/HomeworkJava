@@ -26,6 +26,7 @@ public class FindString {
 				break;
 			}	
 		}
+		//(!found)
 		if(found == false) {
 			System.out.println("not found");
 		}
