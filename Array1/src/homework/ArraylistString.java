@@ -28,17 +28,25 @@ public class ArraylistString {
 			
 			
 		}
-		
+		//prefer fulfills the required features for this assignment
 		public static void prefer() {
 			while(true) {
-			System.out.println("Do yo wish to continue? ");
+			System.out.println("enter name ");
 			String input = sc.nextLine();
-			if (input.equalsIgnoreCase("yes")) {
+			names.add(input);
+			System.out.println("Do yo wish to continue type yes or no? ");
+			 String input2 = sc.nextLine();
+			if (input2.equalsIgnoreCase("yes")) {
+				/*bug printing twice
 				System.out.println("enter name");
 				input = sc.nextLine();
-				names.add(input);
+				names.add(input);*/
+				continue;
 				}
 			else {
+				for (String n : names) {
+					System.out.println(n);
+				}
 				break;
 			}
 			}

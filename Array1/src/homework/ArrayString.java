@@ -22,15 +22,17 @@ public class ArrayString {
 		while(true) {
 			System.out.println("enter name ");
 			String input2 = sc.nextLine();
-			names[count] = input2;
+			names[count++] = input2;
+			if(count == 5) {
+				break;
+			}
 			System.out.println("Do yo wish to continue? ");
 			String input = sc.nextLine();
 			if (input.equalsIgnoreCase("yes")) {
-					System.out.println("enter name again: ");
-					input2 = sc.nextLine();
-					names[count++] = input2;
+				continue;
 		
 			}
+			
 			else {
 				break;
 			}
