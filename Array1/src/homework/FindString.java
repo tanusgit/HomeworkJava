@@ -5,7 +5,7 @@ public class FindString {
 	 * taking string as an input and search it in the array
 		found or not found 
 	 */
-	
+	//working successfully
 	public static void main(String[] args) {
 		
 		FindString n = new FindString();
