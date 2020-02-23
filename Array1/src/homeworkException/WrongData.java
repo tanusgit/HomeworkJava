@@ -8,6 +8,11 @@ public class WrongData extends Exception {
 		this.msg = msg;
 		this.error = error;
 	}
+	public String toString() {
+		String res = msg + " " + error;
+		return res;
+		
+	}
 	
 	
 
