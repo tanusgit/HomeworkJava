@@ -8,7 +8,7 @@ public class MergeArray {
 	 * Strings 2 arraylists create
 	 *  a third arraylist with first 2 arraylist while merging avoid duplicates
 	 */
-	
+	//not avoiding duplicates
 	public static void main(String[] args) {
 		String[] names = {"Rahul", "Mina", "Rahul", "Mina","Hina", "Rina", "Rina"};
 		String[] names2 = {"Rahul", "Rina"};
