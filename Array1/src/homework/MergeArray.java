@@ -8,7 +8,7 @@ public class MergeArray {
 	 * Strings 2 arraylists create
 	 *  a third arraylist with first 2 arraylist while merging avoid duplicates
 	 */
-	//not avoiding duplicates
+	//working well avoiding duplicates
 	public static void main(String[] args) {
 		String[] names = {"Rahul", "Mina", "Rahul", "Mina","Hina", "Rina", "Rina"};
 		String[] names2 = {"Rahul", "Rina"};
@@ -38,13 +38,21 @@ public class MergeArray {
 		 //elements stays from 0 index
 		 for(int j = 0; j < l2; j ++) {
 			 array.add(m[j]);
-		 }
+		 }//finished adding n and m array to the new array list
 		 for(String n2: array) {
 			 System.out.println(n2);
 		 }
 		 
 		 System.out.println("after removing duplicates .............");
-		 int count = 0;
+		 //creating a new arraylist to avoid the duplicates
+		 ArrayList<String> array2 = new ArrayList<>();
+		 for(int i = 0; i < array.size(); i ++) {
+		 if(!array2.contains(array.get(i))) {
+			 array2.add(array.get(i));
+		 }
+		 }
+		 
+		/* int count = 0;
 		 String first = array.get(0);
 		 ArrayList<String> array1 = new ArrayList<>();
 		 for(int i = 1; i < array.size(); i++) {
@@ -55,6 +63,9 @@ public class MergeArray {
 		 }
 		 array1.add(first);
 		 for(String n3: array1) {
+			 System.out.println(n3);
+		 }*/
+		 for(String n3: array2) {
 			 System.out.println(n3);
 		 }
 		 
