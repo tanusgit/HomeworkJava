@@ -17,9 +17,11 @@ public class ValidateNameAgeId {
 		takeInput();
 		if (name.length() < 5) {
 			System.out.println("invalid name");
-		} else if (id < 0) {
+		}
+		if (id < 0) {
 			System.out.println("invalid id");
-		} else if (age < 18) {
+		}
+		if (age < 18) {
 			System.out.println("invalid age");
 		}
 
