@@ -7,7 +7,7 @@ import java.util.Vector;
 //merge of some arraylist
 //mergre() should return the mergedlist
 
-//not working properly printing 8 times
+
 public class MergeArraylist {
 public static void main(String[] args) {
 
@@ -23,10 +23,13 @@ public static void main(String[] args) {
 	b.add("Liberty");
 	b.add("titan");
 	
-	ArrayList c = merge(a, b);
-	for(Object element: c) {
-		System.out.println(c);
-	}
+	
+	
+	//ArrayList c = merge(a, b);
+	  ArrayList<String> c = merge(a, b);
+		for(String element: c) {
+			System.out.println(element);
+		}
 	
 	
 	ArrayList<Integer> d = new ArrayList<>();
@@ -41,9 +44,9 @@ public static void main(String[] args) {
 	e.add(66);
 	e.add(78);
 	
-	ArrayList f = merge2(d, e);
-	for(Object element: f) {
-		System.out.println(f);
+	ArrayList<Integer> f = merge2(d, e);
+	for(Integer element: f) {
+		System.out.println(element);
 	}
 	
 }

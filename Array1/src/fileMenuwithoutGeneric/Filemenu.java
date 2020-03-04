@@ -76,7 +76,9 @@ public class Filemenu {
 		}
 		
 	}
-	
+	//create a file for every person
+	//having multiple files is an advantage
+	//no need to search all the person objects in one file
 		public static void insert() throws IOException {
 			File f = new File("/home/td/Desktop/Java/test10/Person.odt");
 			

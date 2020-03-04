@@ -37,7 +37,14 @@ public class GenricPrint {
 
 //<T> represents generic List<?> represents anytype of list
 //T[] represents any type of array
-	private static <T> void print(List<?> list) {
+//if we write ? we dont have to <T>
+	private static  void print(List<?> list) {
+		for (Object element : list) {
+			System.out.println(element);
+		}
+	}
+	//another approach
+	private static <T> void print2(List<T> list) {
 		for (Object element : list) {
 			System.out.println(element);
 		}

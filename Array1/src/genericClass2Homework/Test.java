@@ -6,6 +6,23 @@ import java.util.List;
 public class Test {
 	public static void main(String[] args) {
 		//assignments: calling this methods
+		
+		User u = new User(23);
+		User u1 = new User(24);
+		User u2 = new User(26);
+		User u3 = new User(27);
+		List<User> userList = new ArrayList<>();
+		userList.add(u);
+		userList.add(u1);
+		userList.add(u2);
+		userList.add(u3);
+		System.out.println("show4 for userlist.................................");
+		show4(userList);
+		
+		
+		
+		
+		
 		Person p = new Person();
 		Person p1 = new Person();
 		Person p2 = new Person();
