@@ -1,18 +1,20 @@
 package genericClass2InstanceVariable;
-
-public class CarGeneric<T>{
+//generic class with 2 instance variables
+public class CarGeneric<T,E>{
+	//if T means String then color and and wheel both would be string
+	//solved the problem with <T,E>
 	private T wheel;
-	private T color;
+	private E color;
 	
 	public T getWheel() {
 		return wheel;
 	}
 	
-	public T getColor() {
+	public E getColor() {
 		return color;
 	}
 	
-	public void setColor(T c) {
+	public void setColor(E c) {
 		color = c;
 	}
 	
