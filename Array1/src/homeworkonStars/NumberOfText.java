@@ -68,7 +68,7 @@ public class NumberOfText {
 
 	}
 	
-	//working 
+	//working perfectly
 	 private static int WordCount4(String sentence) {
 			int count = 0;
 			boolean isCharFirstEncounter=false;
