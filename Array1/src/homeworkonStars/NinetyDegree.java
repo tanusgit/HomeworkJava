@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class NinetyDegree {
 	public static void main(String[] args) {
-		//printMatrix(5);
+		// printMatrix(5);
 		takeMatrix();
 	}
 
@@ -32,20 +32,24 @@ public class NinetyDegree {
 		for (int i = 0; i < h; i++) {
 			System.out.println("enter num");
 			for (int j = 0; j < w; j++) {
-				 input = sc.nextInt();
-				 array[i][j] = input;
+				input = sc.nextInt();
+				array[i][j] = input;
 
 			}
 			System.out.println(" ");
 		}
-		for(int[] n: array) {
-			for(int k : n) {
+		for (int[] n : array) {
+			for (int k : n) {
 				System.out.print(k + " ");
 			}
 			System.out.println(" ");
-			
+
 		}
 
+	}
+	
+	public static void shiftNinetydegree(int[][] matrix) {
+		
 	}
 
 }
