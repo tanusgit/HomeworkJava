@@ -29,6 +29,12 @@ public class MachId {
 			System.out.println(m.name + " " + m.getId());
 		}
 		
+		// approach2 using stream
+			// coolectiong all the employees whose id is 2 using stream
+			Set<String> emp = emplist.stream().filter(e -> e.getId() == 2).map(p -> p.name + " " + p.id)
+					.collect(Collectors.toSet());
+			System.out.println(emp);
+
 
 	}
 	
@@ -58,13 +64,7 @@ public class MachId {
 	
 	
 	
-	/*
-	 * // approach2 using stream
-		// coolectiong all the employees whose id is 2 using stream
-		Set<String> emp = emplist.stream().filter(e -> e.getId() == 2).map(p -> p.name + " " + p.id)
-				.collect(Collectors.toSet());
-		//System.out.println(emp);
-	 */
+	
 	
 	
 	
