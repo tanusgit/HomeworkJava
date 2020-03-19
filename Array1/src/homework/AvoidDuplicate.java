@@ -12,7 +12,7 @@ public class AvoidDuplicate {
 		duplicate();
 
 	}
-//program is working successfully
+//program is not working successfully
 	static List<String> names = new ArrayList<>();
 
 	public static void duplicate() {
