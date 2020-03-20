@@ -17,8 +17,12 @@ public class ExtractNum {
 		for(int i =0; i < s.length(); i++) {
 			char c = s.charAt(i);
 			 if(Character. isDigit(c) == true) {
-				 res = res + " "+ c;
+				 res = res + c;
 			 }	
+			 if(Character. isDigit(c) == false) {
+				 res = res + " ";
+			 }
+		
 		}
 		System.out.println(res);
 
