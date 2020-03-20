@@ -7,21 +7,31 @@ Input2 : UMARK
 public class Replica {
 public static void main(String[] args) {
 	String k = "KUMAR";
-	String A = "ANIL";
+	String A = "UMARK";
 	rotation(k, A);
 }
 
 private static void rotation(String k, String A) {
+	String res = "";
+	boolean found = false;
 	for(int i =0; i < k.length(); i++) {
 		for(int j =0; j < A.length(); j++) {
-			if(k.charAt(i) == A.charAt(j)) {
-				System.out.println("yes");
+			if((int)k.charAt(i) == (int)A.charAt(j)) {
+				res = "yes";
+				found = true;
 			}
 			else {
-				System.out.println("no");
+				res = "no";
+				found = false;
 			}
 		}
 	}
-	
+	if(found) {
+		System.out.println("yes");
+	}
+	if(!found) {
+		System.out.println("no");
+	}
+	System.out.println(res);
 }
 }
