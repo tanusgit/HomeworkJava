@@ -2,15 +2,18 @@ package newhomeworkonCoreJava;
 
 public class PrintinWord {
 public static void main(String[] args) {
-	printten(333);
+	//printten(333);
+	print(54);
 }
 
 
 
 private static void print2(String i) {
 	// TODO Auto-generated method stub
+	int res = Integer.parseInt(i);
 	for(int j =0; j < i.length(); j++) {
-		
+		char c = i.charAt(j);
+		print((int)c);
 	}
 	
 	
@@ -50,6 +53,9 @@ private static void print(int i) {
 	}
 	else if(i == 0) {
 		System.out.println("zero");
+	}
+	else {
+		printten(i);
 	}
 	
 }
