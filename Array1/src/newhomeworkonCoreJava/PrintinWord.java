@@ -1,9 +1,18 @@
 package newhomeworkonCoreJava;
 
+import java.util.stream.Stream;
+
 public class PrintinWord {
 public static void main(String[] args) {
 	//printten(333);
-	print(54);
+	//print(54);
+	
+	String s = "Saraswati";
+	Stream<String> m = s.lines();
+	String k = s.intern();
+	System.out.println(k);
+	System.out.println(m);
+	
 }
 
 
