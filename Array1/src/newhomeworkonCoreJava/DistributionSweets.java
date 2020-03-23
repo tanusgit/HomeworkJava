@@ -10,31 +10,16 @@ The position number who receives the last chocolate
 public class DistributionSweets {
 	public static void main(String[] args) {
 		int people = 5;
-		int sweets = 2;
-		int position = 1;
-		int pos = distribute(people, 2, 1);
-		//System.out.println(pos);
+		int sweets = 5;
+		int position = 4;
+		int pos = distribute(people, sweets, position);
+		System.out.println(pos);
 	}
 
 	private static int distribute(int people, int sweet, int position) {
 		// TODO Auto-generated method stub
-		int keptsweet = 1;
-		int pos = 0;
-		int[] array = new int[people];
-		int a = array.length;
-		//System.out.println(a);
-		while (sweet > 0) {
-			for (int i = position; i < array.length; i++) {
-				array[i] = keptsweet++;
-				pos = i;
-				
-			}
-			sweet = sweet -1;;
-		}
+		int res = ((position + sweet)-1)% people;
+		return res;
 		
-		for(int n : array) {
-			System.out.println(n);
-		}
-		return pos;
 	}
 }
