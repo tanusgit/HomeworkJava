@@ -17,13 +17,7 @@ public static void main(String[] args) {
 
 
 
-private static void print2(String i) {
-	// TODO Auto-generated method stub
-	int res = Integer.parseInt(i);
-	for(int j =0; j < i.length(); j++) {
-		char c = i.charAt(j);
-		print((int)c);
-	}
+
 	
 	
 	

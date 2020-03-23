@@ -9,9 +9,9 @@ The position number who receives the last chocolate
  */
 public class DistributionSweets {
 	public static void main(String[] args) {
-		int people = 5;
-		int sweets = 5;
-		int position = 4;
+		int people = 100;
+		int sweets = 250;
+		int position = 27;
 		int pos = distribute(people, sweets, position);
 		System.out.println(pos);
 	}
