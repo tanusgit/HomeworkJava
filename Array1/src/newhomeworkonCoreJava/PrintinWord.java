@@ -6,24 +6,16 @@ public class PrintinWord {
 public static void main(String[] args) {
 	//printten(333);
 	//print(54);
-	
-	String s = "Saraswati";
-	Stream<String> m = s.lines();
-	String k = s.intern();
-	System.out.println(k);
-	System.out.println(m);
-	
-}
-
-
-
-
-	
+   int num = 223;
+   
+   if(num % 100 > 9) {
+	   int res = (num % 100)%10;
+	   printten(num%100);
+	   print(res);
+   }
 	
 	
 }
-
-
 
 
 private static void print(int i) {
@@ -57,9 +49,7 @@ private static void print(int i) {
 	else if(i == 0) {
 		System.out.println("zero");
 	}
-	else {
-		printten(i);
-	}
+	
 	
 }
 
@@ -117,13 +107,37 @@ private static void printten(int i) {
 		System.out.println("eighty");
 	}
 	else if(i >= 90 && i < 100) {
-		System.out.println("ninety"); 
-
-		
+		System.out.println("ninety");
 	}
 	
+	else if(i >= 100 && i < 200) {
+		System.out.println("one hundred");
+	}
+	else if(i >= 200 && i < 300) {
+		System.out.println("two hundred");
+	}
+	else if(i >= 300 && i < 400) {
+		System.out.println("three hundred");
+	}
+	else if(i >= 400 && i < 500) {
+		System.out.println("four hundred");
+	}
+	else if(i >= 500 && i < 600) {
+		System.out.println("five hundred");
+	}
+	else if(i >= 600 && i < 700) {
+		System.out.println("six hundred");
+	}
+	else if(i >= 700 && i < 800) {
+		System.out.println("seven hundred");
+	}
+	else if(i >= 800 && i < 900) {
+		System.out.println("eight hundred");
+	}
+	else if(i >= 900 && i < 1000) {
+		System.out.println("nine hundred");
+	}
 	
-
 }
 
 }
